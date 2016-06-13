@@ -3,7 +3,7 @@
  * \date 13-May-16.
  */
 
-#include <c++/4.8.3/stdexcept>
+#include <stdexcept>
 #include "gl_vertex_buffer.h"
 
 gl_vertex_buffer::gl_vertex_buffer() {

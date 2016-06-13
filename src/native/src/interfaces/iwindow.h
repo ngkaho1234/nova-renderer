@@ -5,7 +5,7 @@
 #ifndef RENDERER_WINDOW_H
 #define RENDERER_WINDOW_H
 
-#include <GL/glm/glm.hpp>
+#include <glm/glm.hpp>
 
 /*
  * !\brief Represents a window that can be drawn to.

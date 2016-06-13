@@ -8,11 +8,7 @@
 #ifndef RENDERER_NOVA_H
 #define RENDERER_NOVA_H
 
-#if defined DLL_EXPORT
-#define NOVA_FUNC __declspec(dllexport)
-#else
-#define NOVA_FUNC __declspec(dllimport)
-#endif
+#define NOVA_FUNC 
 
 #include "../mc/mc_objects.h"
 

@@ -3,9 +3,11 @@
  * \date 13-May-16.
  */
 
-#include <c++/4.8.3/algorithm>
+#include <algorithm>
 #include "gui_renderer.h"
 #include "../../gl/objects/gl_vertex_buffer.h"
+
+#include <cstring>
 
 gui_renderer::gui_renderer(texture_manager & textures,
                            shader_store & shaders,

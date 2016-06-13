@@ -1,18 +1,8 @@
 cmake_minimum_required(VERSION 3.3)
 project(renderer)
 
-add_subdirectory(
-        "C:/Libraries/glfw" "${CMAKE_CURRENT_BINARY_DIR}/glfw"
-)
+find_package(glm REQUIRED)
 
-include_directories(
-        "C:/win-builds/lib/gcc/mingw32/4.8.1/include/c++"
-        "C:/win-builds/include"
-)
-
-link_directories(
-        "C:/win-builds/lib"
-)
 set(SOURCE_FILES
         gl/glad.c
 
@@ -62,5 +52,7 @@ target_link_libraries(nova-test glfw ${GLFW_LIBRARIES})
 
 set_property(TARGET nova-test PROPERTY CXX_STANDARD 14)
 set_property(TARGET nova-test PROPERTY CXX_STANDARD_REQUIRED ON)
+
+set_target_properties(nova-test nova-renderer PROPERTIES LINK_FLAGS -ldl)
 
 set(CMAKE_BUILD_TYPE Debug)

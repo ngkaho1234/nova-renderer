@@ -7,7 +7,7 @@
 #define RENDERER_TEXTURE_RECEIVER_H
 
 #include <string>
-#include <GL/glm/glm.hpp>
+#include <glm/glm.hpp>
 #include <map>
 #include "../mc/mc_objects.h"
 #include "../gl/glad/glad.h"
